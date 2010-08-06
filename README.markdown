@@ -5,7 +5,7 @@
 	allow you to set this particular header.
 	
 	* App Engine when combined with it's Memcache service create an incredibly fast, reliable and scalable
-	 way of delivering web fonts for free. (Arround 8 and a half million font deliveries per day)
+	 way of delivering web fonts for free. (Around 8 and a half million font deliveries per day)
 
 # Setting up WebFonts
 
