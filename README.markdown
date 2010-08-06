@@ -1,10 +1,11 @@
 # About
 
 	* The latest web font format (WOFF) requires special HTTP headers when served from a different domain
-	(e.g. Tumblr web templates). Unfortunately most cheap/free host providers including Amazon S3 doen't allow you to set this particular header.
+	(e.g. Tumblr web templates). Unfortunately most cheap/free host providers including Amazon S3 doen't 
+	allow you to set this particular header.
 	
-	* App Engine when combined with it's Memcache service create an incredibly fast, reliable and scalable way of delivering web fonts for free.
-	(Arround 8 and a half million font deliveries per day)
+	* App Engine when combined with it's Memcache service create an incredibly fast, reliable and scalable
+	 way of delivering web fonts for free. (Arround 8 and a half million font deliveries per day)
 
 # Setting up WebFonts
 
