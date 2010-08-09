@@ -27,4 +27,5 @@ a, a:visited, a:active, a:hover{
 	font-size: 3em;
 	line-height: 2;
 	color: #000;
+	text-decoration: none;
 }
