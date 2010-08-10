@@ -21,7 +21,7 @@ class StaticCustomFileHandler(webapp.RequestHandler):
 		
     def get(self):
 	
-        filename = self.request.get("name")
+        filename = self.request.path.split("/")[-1]
         folder = "fonts"
         fileContent = self.getFile(filename, folder)
 	
@@ -47,7 +47,7 @@ class StaticCustomFileHandler(webapp.RequestHandler):
 		# Specify either Expires OR Cache-Control headers NOT both
 		# Setting Expires header to maximum values allowd by the RFC guidelines
 		self.response.headers.add_header("Expires", expires_time.strftime('%a, %d %b %Y %H:%M:%S GMT') )
-		# self.response.headers['Cache-Control'] = 'public, max-age=315360000'
+		self.response.headers['Cache-Control'] = 'public, max-age=315360000'
 		
 		# Woff files will now work cross domain unless Access-Control-Allow-Origin is set
 		# You can set this to * (for request from any domain) or you can set your domain explicitly
@@ -87,7 +87,7 @@ class StaticCustomFileHandler(webapp.RequestHandler):
 		
 application = webapp.WSGIApplication(
                                      [('/', MainPage),
-									 ('/fonts', StaticCustomFileHandler)],
+									 (r'/fonts.*', StaticCustomFileHandler)],
                                      debug=True)
 
 

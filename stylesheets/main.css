@@ -1,7 +1,7 @@
 @font-face {
 	font-family: 'ImpactLabelRegular';
-	src: url('/fonts?name=impact_label-webfont.eot');
-	src: local('☺'), url('/fonts?name=impact_label-webfont.woff') format('woff'), url('/fonts?name=impact_label-webfont.ttf') format('truetype'), url('/fonts?name=impact_label-webfont.svg#webfont') format('svg');
+	src: url('/fonts/impact_label-webfont.eot');
+	src: local('☺'), url('/fonts/impact_label-webfont.woff') format('woff'), url('/fonts/impact_label-webfont.ttf') format('truetype'), url('/fonts/impact_label-webfont.svg#webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
