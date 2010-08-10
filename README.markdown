@@ -30,9 +30,8 @@
 ## How to run
 
 	* Once you application has been deployed, you can request an specific font as follows:
-	 http://{your application id}.appspot.com/fonts?name={the font name that you want}
+	 http://{your application id}.appspot.com/fonts/{the font name that you want}
 
 # Further work
 
 	* Investigate options to serve content gzipped
-	* Don't use URI parameters as a way of obtaining the desired font (It can interfere with caching in some browsers)

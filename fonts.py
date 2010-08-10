@@ -87,8 +87,8 @@ class StaticCustomFileHandler(webapp.RequestHandler):
 		
 application = webapp.WSGIApplication(
                                      [('/', MainPage),
-									 (r'/fonts.*', StaticCustomFileHandler)],
-                                     debug=True)
+									 (r'/fonts/.*', StaticCustomFileHandler)],
+                                     debug=False)
 
 
 
